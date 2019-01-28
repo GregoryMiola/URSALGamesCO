@@ -1,2 +1,2 @@
 # URSALGamesCO
-An prototype of cross platform Game app
+A prototype of cross-platform Game app
