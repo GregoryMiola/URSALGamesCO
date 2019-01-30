@@ -1,0 +1,12 @@
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\bin\Debug\netcoreapp2.1\Data.deps.json
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\bin\Debug\netcoreapp2.1\Data.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.csprojAssemblyReference.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.AssemblyInfoInputs.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.AssemblyInfo.cs
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.pdb
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data\obj\Debug\netcoreapp2.1\Data.csproj.CopyComplete
