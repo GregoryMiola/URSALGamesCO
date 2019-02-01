@@ -1,7 +1,12 @@
 # URSALGamesCO
 A prototype of cross-platform Game app
 
-\\n\\n\\n\\n\\n\\n
+
+
+
+
+
+
 
 Requisito Opcional 3
 
