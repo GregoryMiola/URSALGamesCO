@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataPersistenceComponent } from './component/data-persistence/data-persistence.component';
+import { GameResultsComponent } from './component/game-results/game-results.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataPersistenceComponent,
+    GameResultsComponent
   ],
   imports: [
     BrowserModule,

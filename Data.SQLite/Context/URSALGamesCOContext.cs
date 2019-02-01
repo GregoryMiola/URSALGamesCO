@@ -7,6 +7,8 @@ namespace Data.SQLite.Context
     {
         public DbSet<Game> Game { get; set; }
 
+        public DbSet<GameResult> GameResults { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=WebApplication.db");

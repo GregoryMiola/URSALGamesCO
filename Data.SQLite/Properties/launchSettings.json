@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Data.SQLite": {
+      "commandName": "Project"
+    }
+  }
+}

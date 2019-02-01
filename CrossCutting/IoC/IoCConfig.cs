@@ -19,11 +19,12 @@ namespace CrossCutting.IoC
         {
             #region Services
             services.AddTransient<IGameService, GameService>();
-            //services.AddTransient<IHttpHandler, HttpClientHandler>();
+            services.AddTransient<IGameResultService, GameResultService>();
             #endregion Services
 
             #region Repositories
             services.AddTransient<IGameRepository, GameRepository>();
+            services.AddTransient<IGameResultRepository, GameResultRepository>();
             services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion Repositories
 
