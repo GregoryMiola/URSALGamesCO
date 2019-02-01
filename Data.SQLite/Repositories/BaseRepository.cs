@@ -31,8 +31,17 @@ namespace Data.SQLite.Repositories
 
         public long Update(TEntity document)
         {
-            context.Set<TEntity>().Update(document);
-            return context.SaveChanges();
+            try
+            {
+                context.Set<TEntity>().Update(document);
+
+                // Attempt to save changes to the database
+                return context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                throw ex;
+            }
         }
 
         public bool Remove(long id)

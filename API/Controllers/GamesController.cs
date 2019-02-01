@@ -3,6 +3,7 @@ using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -44,7 +45,7 @@ namespace API.Controllers
             }
             catch (System.Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
         }
 
@@ -56,9 +57,13 @@ namespace API.Controllers
             {
                 return Ok(GameService.Add(game));
             }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                return Conflict(ex.Message);
+            }
             catch (System.Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
         }
 
@@ -73,7 +78,7 @@ namespace API.Controllers
             }
             catch (System.Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
         }
 
@@ -87,7 +92,7 @@ namespace API.Controllers
             }
             catch (System.Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
         }
     }
