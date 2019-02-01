@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CrossCutting.IoC;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -11,19 +12,39 @@ using System.IO;
 
 namespace API
 {
+    /// <summary>
+    /// ?????
+    /// </summary>
     public class Startup
     {
+        #region Properties
+
+        #endregion
+        /// <summary>
+        /// ?????
+        /// </summary>
+        public IConfiguration Configuration { get; }
+
+        #region Properties
+
+        #endregion
+        /// <summary>
+        /// ?????
+        /// </summary>
+        /// <param name="configuration"></param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddDbContext<URSALGamesCOContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("URSALGamesCODB")));
+            //services.AddEntityFrameworkSqlite()
+            //.AddDbContext<URSALGamesCOContext>(
+            //    options => { options.UseSqlite($"Data Source={_appEnv.ApplicationBasePath}/data.db"); });
 
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);
 
@@ -79,7 +100,7 @@ namespace API
 
         private static void RegisterServices(IServiceCollection services)
         {
-            //IoCConfig.RegisterServices(services);
+            IoCConfig.RegisterServices(services);
         }
     }
 }

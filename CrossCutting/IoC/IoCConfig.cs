@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Data.SQLite.Context;
+using Data.SQLite.Repositories;
+using Domain.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using Service.Services;
 
 namespace CrossCutting.IoC
 {
@@ -14,16 +18,17 @@ namespace CrossCutting.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             #region Services
-            //services.AddTransient<ISaleService, SaleService>();
+            services.AddTransient<IGameService, GameService>();
             //services.AddTransient<IHttpHandler, HttpClientHandler>();
             #endregion Services
 
             #region Repositories
-            //services.AddTransient<ISaleRepository, SaleRepository>();
+            services.AddTransient<IGameRepository, GameRepository>();
+            services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             #endregion Repositories
 
             #region Contexts
-            //services.AddTransient<SalesContext>();
+            services.AddTransient<URSALGamesCOContext>();
             #endregion Contexts
         }
     }

@@ -1,0 +1,14 @@
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Data.SQLite.deps.json
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Data.SQLite.runtimeconfig.json
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Data.SQLite.runtimeconfig.dev.json
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Data.SQLite.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Data.SQLite.pdb
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.csprojAssemblyReference.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.csproj.CoreCompileInputs.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.AssemblyInfoInputs.cache
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.AssemblyInfo.cs
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.csproj.CopyComplete
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.dll
+C:\Users\gmsilva4\Documents\Personal\URSALGamesCO\Data.SQLite\obj\Debug\netcoreapp2.1\Data.SQLite.pdb
