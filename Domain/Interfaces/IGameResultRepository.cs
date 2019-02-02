@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Domain.DTOs;
 using Domain.Models;
 
 namespace Domain.Interfaces
@@ -8,5 +9,6 @@ namespace Domain.Interfaces
         GameResult GetResult(long gameId, long playerId);
         List<long> GetGamesList();
         List<GameResult> GetGameResultList(int gameId);
+        List<ResultsGamesPlayedDTO> GetResultsByGamePlayed();
     }
 }

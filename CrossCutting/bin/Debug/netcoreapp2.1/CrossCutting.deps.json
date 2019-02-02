@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "47b5e8e7a40647177227170c44af6c5d8917c96f"
+    "signature": "c469f87de7a1b6ae4c1d9b7826460139f4a5e038"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,7 @@
         "dependencies": {
           "Data.SQLite": "1.0.0",
           "Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Service": "1.0.0"
         },
         "runtime": {
@@ -113,7 +113,7 @@
       "Microsoft.Extensions.Caching.Memory/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
         "runtime": {
@@ -158,7 +158,7 @@
       },
       "Microsoft.Extensions.DependencyInjection/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
         },
         "runtime": {
           "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -167,18 +167,18 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
           }
         }
       },
       "Microsoft.Extensions.Logging/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
@@ -199,7 +199,7 @@
       },
       "Microsoft.Extensions.Options/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "runtime": {
@@ -653,12 +653,12 @@
       "path": "microsoft.extensions.dependencyinjection/2.1.1",
       "hashPath": "microsoft.extensions.dependencyinjection.2.1.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2xMk9LHz1EY+7gVG0lG4qBvkUiVjg8QNPqd2HYmEP5+PL7Ayo96EhBieAhd++Gx4yM+xN8kNqmhZdFMBHeG0HQ==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-PW1596sF97gpIc1JuUuYvTmeLfeqC5whbWPsWgJhN0fdwz683him3b/HB0dqhFesVssOjnnA0fEz4+S0gUeBqA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/2.1.1": {
       "type": "package",

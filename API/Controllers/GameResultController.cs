@@ -37,5 +37,11 @@ namespace API.Controllers
         {
             return Ok(GameResultService.GetGamesResultList(gameId));
         }
+
+        [HttpGet("/getResults/byGamePlayed")]
+        public ActionResult<LeaderboardDTO> GetResultsByGamePlayed()
+        {
+            return Ok(GameResultService.GetResultsByGamePlayed());
+        }
     }
 }

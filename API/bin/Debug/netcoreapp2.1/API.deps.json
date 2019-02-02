@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "af43b97f373fa343858f207f73a19c033c33edb2"
+    "signature": "30cbcfd64fe9ef402672aee38a6d0da510f3d541"
   },
   "compilationOptions": {
     "defines": [
@@ -29,7 +29,7 @@
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
@@ -111,17 +111,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
@@ -769,7 +758,7 @@
         "dependencies": {
           "Data.SQLite": "1.0.0",
           "Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Service": "1.0.0"
         },
         "runtime": {
@@ -977,7 +966,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "2.1.1",
           "Microsoft.Extensions.Configuration.Xml": "2.1.1",
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.DiagnosticAdapter": "2.1.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
           "Microsoft.Extensions.FileProviders.Composite": "2.1.1",
@@ -1175,7 +1164,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
@@ -1204,7 +1193,7 @@
           "Microsoft.AspNetCore.Cryptography.Internal": "2.1.1",
           "Microsoft.AspNetCore.DataProtection.Abstractions": "2.1.1",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Win32.Registry": "4.5.0",
@@ -1494,7 +1483,7 @@
       "Microsoft.AspNetCore.MiddlewareAnalysis/2.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "System.Diagnostics.DiagnosticSource": "4.5.0"
         },
         "compile": {
@@ -1938,7 +1927,7 @@
           "Microsoft.AspNetCore.Authorization": "2.1.1",
           "Microsoft.AspNetCore.SignalR.Common": "1.0.1",
           "Microsoft.AspNetCore.SignalR.Protocols.Json": "1.0.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "System.Reflection.Emit": "4.3.0",
           "System.Threading.Channels": "4.5.0"
@@ -2187,7 +2176,7 @@
       "Microsoft.Extensions.Caching.Memory/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
         "compile": {
@@ -2314,10 +2303,16 @@
       },
       "Microsoft.Extensions.DependencyInjection/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
         },
         "compile": {
           "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "compileOnly": true
       },
@@ -2402,7 +2397,7 @@
       "Microsoft.Extensions.Hosting.Abstractions/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1"
         },
@@ -2413,7 +2408,7 @@
       },
       "Microsoft.Extensions.Http/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
@@ -2447,7 +2442,7 @@
       },
       "Microsoft.Extensions.Localization/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Localization.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
@@ -2466,7 +2461,7 @@
       "Microsoft.Extensions.Logging/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
@@ -2538,7 +2533,7 @@
       },
       "Microsoft.Extensions.Options/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
@@ -2550,7 +2545,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1"
         },
         "compile": {
@@ -2570,7 +2565,7 @@
       },
       "Microsoft.Extensions.WebEncoders/2.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "System.Text.Encodings.Web": "4.5.0"
         },
@@ -3795,13 +3790,6 @@
       "path": "microsoft.entityframeworkcore.sqlite.core/2.1.1",
       "hashPath": "microsoft.entityframeworkcore.sqlite.core.2.1.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2xMk9LHz1EY+7gVG0lG4qBvkUiVjg8QNPqd2HYmEP5+PL7Ayo96EhBieAhd++Gx4yM+xN8kNqmhZdFMBHeG0HQ==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
-    },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -4913,6 +4901,13 @@
       "sha512": "sha512-ZPFcDUbSwaEVWMyef8+9GqiTAghHX+eLeIEW032i4LDFAdyM4J4brV0UzChlKtClT7cuip/Of6G+veDnO3/bCw==",
       "path": "microsoft.extensions.dependencyinjection/2.1.1",
       "hashPath": "microsoft.extensions.dependencyinjection.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PW1596sF97gpIc1JuUuYvTmeLfeqC5whbWPsWgJhN0fdwz683him3b/HB0dqhFesVssOjnnA0fEz4+S0gUeBqA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/2.1.0": {
       "type": "package",

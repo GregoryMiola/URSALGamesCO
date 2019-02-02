@@ -1,4 +1,5 @@
 ﻿using Data.SQLite.Context;
+using Domain.DTOs;
 using Domain.Interfaces;
 using Domain.Models;
 using System.Collections.Generic;
@@ -28,6 +29,14 @@ namespace Data.SQLite.Repositories
         public List<GameResult> GetGameResultList(int gameId)
         {
             return Context.GameResults.Where(gr => gr.GameId == gameId).Take(100).OrderByDescending(gr => gr.Win).ToList();
+        }
+
+        public List<ResultsGamesPlayedDTO> GetResultsByGamePlayed()
+        {
+            return Context.GameResults
+                .GroupBy(gr => gr.PlayerId)
+                .Select(gr => new ResultsGamesPlayedDTO { PlayerId = gr.Key, GamesPlayed = gr.Select(b => b.GameId).Count() })
+                .OrderByDescending(r => r.GamesPlayed).ToList();
         }
     }
 }

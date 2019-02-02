@@ -56,5 +56,10 @@ namespace Service.Services
 
             return leaderboardList;
         }
+
+        public List<ResultsGamesPlayedDTO> GetResultsByGamePlayed()
+        {
+            return GameResultRepository.GetResultsByGamePlayed();
+        }
     }
 }

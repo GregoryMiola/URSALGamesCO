@@ -8,5 +8,6 @@ namespace Domain.Interfaces
         bool UpdateResults(List<GameResultDTO> results);
         List<long> GetGamesList();
         List<LeaderboardDTO> GetGamesResultList(int gameId);
+        List<ResultsGamesPlayedDTO> GetResultsByGamePlayed();
     }
 }
