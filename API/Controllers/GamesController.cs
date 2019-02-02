@@ -4,10 +4,12 @@ using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 
 namespace API.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("URSALGamesCO")]
     [ApiController]
     public class GamesController : ControllerBase
     {

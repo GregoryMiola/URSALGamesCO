@@ -41,10 +41,12 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            //services.AddDbContext<URSALGamesCOContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("URSALGamesCODB")));
-            //services.AddEntityFrameworkSqlite()
-            //.AddDbContext<URSALGamesCOContext>(
-            //    options => { options.UseSqlite($"Data Source={_appEnv.ApplicationBasePath}/data.db"); });
+            services.AddCors(o => o.AddPolicy("URSALGamesCO", builder =>
+            {
+                builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+            }));
 
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);
 

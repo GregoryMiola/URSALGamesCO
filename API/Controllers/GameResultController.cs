@@ -1,11 +1,13 @@
 ﻿using Domain.DTOs;
 using Domain.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("~/api/gameResult")]
+    [EnableCors("URSALGamesCO")]
     [ApiController]
     public class GameResultController : ControllerBase
     {
@@ -26,20 +28,20 @@ namespace API.Controllers
             }
         }
 
-        [HttpGet("/getListGames")]
+        [HttpGet("getListGames")]
         public ActionResult<List<long>> GetResults()
         {
             return Ok(GameResultService.GetGamesList());
         }
 
-        [HttpGet("/getResults/{gameId}")]
+        [HttpGet("getResults/{gameId}")]
         public ActionResult<LeaderboardDTO> GetGameResults(int gameId)
         {
             return Ok(GameResultService.GetGamesResultList(gameId));
         }
 
-        [HttpGet("/getResults/byGamePlayed")]
-        public ActionResult<LeaderboardDTO> GetResultsByGamePlayed()
+        [HttpGet("getResults/byGamePlayed")]
+        public ActionResult<ResultsGamesPlayedDTO> GetResultsByGamePlayed()
         {
             return Ok(GameResultService.GetResultsByGamePlayed());
         }
