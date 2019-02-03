@@ -13,31 +13,38 @@ using System.IO;
 namespace API
 {
     /// <summary>
-    /// ?????
+    /// Project startup class
     /// </summary>
     public class Startup
     {
         #region Properties
 
-        #endregion
         /// <summary>
-        /// ?????
+        /// Project configuration property
         /// </summary>
         public IConfiguration Configuration { get; }
 
-        #region Properties
+        #endregion Properties
 
-        #endregion
+        #region Ctor
+
         /// <summary>
-        /// ?????
+        /// Ctor
         /// </summary>
-        /// <param name="configuration"></param>
+        /// <param name="configuration">Project configuration</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        #endregion Ctor
+
+        #region Methods
+
+        /// <summary>
+        /// This method gets called by the runtime. Use this method to add services to the container.
+        /// </summary>
+        /// <param name="services">Collection of configuration services of project</param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -72,7 +79,11 @@ namespace API
             RegisterServices(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// </summary>
+        /// <param name="app">Application Builder</param>
+        /// <param name="env">Hosting environment</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseResponseCompression();
@@ -100,9 +111,15 @@ namespace API
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
         }
 
+        /// <summary>
+        /// This method called for register IoC of project
+        /// </summary>
+        /// <param name="services">Collection of configuration services of project</param>
         private static void RegisterServices(IServiceCollection services)
         {
             IoCConfig.RegisterServices(services);
         }
+
+        #endregion Methods
     }
 }

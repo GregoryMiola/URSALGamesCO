@@ -4,21 +4,151 @@
         <name>API</name>
     </assembly>
     <members>
+        <member name="T:API.Controllers.GameResultController">
+            <summary>
+            Controller of game results
+            </summary>
+        </member>
+        <member name="F:API.Controllers.GameResultController.GameResultService">
+            <summary>
+            Property of game results service
+            </summary>
+        </member>
+        <member name="M:API.Controllers.GameResultController.#ctor(Domain.Interfaces.IGameResultService)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="gameResultService">Game results service</param>
+        </member>
+        <member name="M:API.Controllers.GameResultController.PutGameResults(System.Collections.Generic.List{Domain.DTOs.GameResultDTO})">
+            <summary>
+            Endpoint for update game results
+            </summary>
+            <param name="results">List of game results</param>
+            <returns>Response of update process</returns>
+        </member>
+        <member name="M:API.Controllers.GameResultController.GetListGames">
+            <summary>
+            Endpoint for get list of games
+            </summary>
+            <returns>Response with list of games</returns>
+        </member>
+        <member name="M:API.Controllers.GameResultController.GetGameResults(System.Int32)">
+            <summary>
+            Endpoint for get game results
+            </summary>
+            <param name="gameId">Game identifier</param>
+            <returns>Response with list of game results</returns>
+        </member>
+        <member name="M:API.Controllers.GameResultController.GetResultsByGamePlayed">
+            <summary>
+            Endpoint for get the results of users based on the number of games performed
+            </summary>
+            <returns>List of most played users</returns>
+        </member>
+        <member name="T:API.Controllers.GamesController">
+            <summary>
+            Controller of games
+            </summary>
+        </member>
+        <member name="F:API.Controllers.GamesController.GameService">
+            <summary>
+            Property of game service
+            </summary>
+        </member>
+        <member name="M:API.Controllers.GamesController.#ctor(Domain.Interfaces.IGameService)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="gameService">Game service</param>
+        </member>
+        <member name="M:API.Controllers.GamesController.GetAll">
+            <summary>
+            Endpoint for get all games
+            </summary>
+            <returns>Response with list of games</returns>
+        </member>
+        <member name="M:API.Controllers.GamesController.GetById(System.Int64)">
+            <summary>
+            Endpoint for get game by id
+            </summary>
+            <param name="gameId">Game identifier</param>
+            <returns>Response with specific game</returns>
+        </member>
+        <member name="M:API.Controllers.GamesController.Post(Domain.Models.Game)">
+            <summary>
+            Endpoint for add game
+            </summary>
+            <param name="game">Game to add</param>
+            <returns>Response of process</returns>
+        </member>
+        <member name="M:API.Controllers.GamesController.Put(System.Int32,Domain.Models.Game)">
+            <summary>
+            Endpoint for update game
+            </summary>
+            <param name="gameId">Game identifier</param>
+            <param name="game">Game to update</param>
+            <returns>Response of process</returns>
+        </member>
+        <member name="M:API.Controllers.GamesController.Remove(System.Int32)">
+            <summary>
+            Endpoint for delete game
+            </summary>
+            <param name="gameId">Game to delete</param>
+            <returns>Response of process</returns>
+        </member>
+        <member name="T:API.Program">
+            <summary>
+            Class of Program project
+            </summary>
+        </member>
+        <member name="M:API.Program.Main(System.String[])">
+            <summary>
+            Main project method
+            </summary>
+            <param name="args">Arguments of method</param>
+        </member>
+        <member name="M:API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Build Web Host Builder
+            </summary>
+            <param name="args">Arguments of method</param>
+            <returns>Application Settings</returns>
+        </member>
         <member name="T:API.Startup">
             <summary>
-            ?????
+            Project startup class
             </summary>
         </member>
         <member name="P:API.Startup.Configuration">
             <summary>
-            ?????
+            Project configuration property
             </summary>
         </member>
         <member name="M:API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
-            ?????
+            Ctor
             </summary>
-            <param name="configuration"></param>
+            <param name="configuration">Project configuration</param>
+        </member>
+        <member name="M:API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Collection of configuration services of project</param>
+        </member>
+        <member name="M:API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Application Builder</param>
+            <param name="env">Hosting environment</param>
+        </member>
+        <member name="M:API.Startup.RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method called for register IoC of project
+            </summary>
+            <param name="services">Collection of configuration services of project</param>
         </member>
     </members>
 </doc>

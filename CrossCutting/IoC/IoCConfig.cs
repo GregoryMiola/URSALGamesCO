@@ -7,14 +7,16 @@ using Service.Services;
 namespace CrossCutting.IoC
 {
     /// <summary>
-    /// Classe responsável pela configuração da injeção de dependências do sistema 
+    /// Class responsible for configuring system dependency injection 
     /// </summary>
     public class IoCConfig
     {
+        #region Methods
+
         /// <summary>
-        /// Método que registra todas as classes/interfaces que serão injetadas no sistema
+        /// Method that registers all classes / interfaces that will be injected into the system
         /// </summary>
-        /// <param name="services">Serviço de configuração da injeção de dependência</param>
+        /// <param name="services">Dependency Injection Configuration Service</param>
         public static void RegisterServices(IServiceCollection services)
         {
             #region Services
@@ -32,5 +34,7 @@ namespace CrossCutting.IoC
             services.AddTransient<URSALGamesCOContext>();
             #endregion Contexts
         }
+
+        #endregion Methods
     }
 }

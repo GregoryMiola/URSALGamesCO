@@ -1,23 +1,46 @@
-﻿using System.Collections.Generic;
-using Domain.Interfaces;
+﻿using Domain.Interfaces;
 using Domain.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace API.Controllers
 {
+    /// <summary>
+    /// Controller of games
+    /// </summary>
     [Route("api/[controller]")]
     [EnableCors("URSALGamesCO")]
     [ApiController]
     public class GamesController : ControllerBase
     {
+        #region Property
+
+        /// <summary>
+        /// Property of game service
+        /// </summary>
         private IGameService GameService;
 
+        #endregion Property
+
+        #region Ctor
+
+        /// <summary>
+        /// Ctor
+        /// </summary>
+        /// <param name="gameService">Game service</param>
         public GamesController(IGameService gameService) => this.GameService = gameService;
 
-        // GET api/games
+        #endregion Ctor
+
+        #region Methods
+
+        /// <summary>
+        /// Endpoint for get all games
+        /// </summary>
+        /// <returns>Response with list of games</returns>
         [HttpGet]
         public ActionResult<IEnumerable<Game>> GetAll()
         {
@@ -30,7 +53,11 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // GET api/games/5
+        /// <summary>
+        /// Endpoint for get game by id
+        /// </summary>
+        /// <param name="gameId">Game identifier</param>
+        /// <returns>Response with specific game</returns>
         [HttpGet("{gameId}")]
         public ActionResult<Game> GetById(long gameId)
         {
@@ -51,7 +78,11 @@ namespace API.Controllers
             }
         }
 
-        // POST api/games
+        /// <summary>
+        /// Endpoint for add game
+        /// </summary>
+        /// <param name="game">Game to add</param>
+        /// <returns>Response of process</returns>
         [HttpPost]
         public ActionResult<int> Post([FromBody] Game game)
         {
@@ -69,7 +100,12 @@ namespace API.Controllers
             }
         }
 
-        // PUT api/games/5
+        /// <summary>
+        /// Endpoint for update game
+        /// </summary>
+        /// <param name="gameId">Game identifier</param>
+        /// <param name="game">Game to update</param>
+        /// <returns>Response of process</returns>
         [HttpPut("{gameId}")]
         public ActionResult<int> Put(int gameId, [FromBody] Game game)
         {
@@ -84,7 +120,11 @@ namespace API.Controllers
             }
         }
 
-        // DELETE api/games/5
+        /// <summary>
+        /// Endpoint for delete game
+        /// </summary>
+        /// <param name="gameId">Game to delete</param>
+        /// <returns>Response of process</returns>
         [HttpDelete("{gameId}")]
         public ActionResult<bool> Remove(int gameId)
         {
@@ -97,5 +137,7 @@ namespace API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        #endregion Methods
     }
 }
