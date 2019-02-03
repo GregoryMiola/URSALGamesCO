@@ -8,6 +8,7 @@ import { throwError } from 'rxjs/internal/observable/throwError';
 import { environment } from 'src/environments/environment';
 import { Leaderboard } from '../model/leaderboard.model';
 import { ResultsGamesPlayed } from '../model/results-games-played.model';
+import { ResultGames } from '../model/result-games.model';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +29,11 @@ export class URSALGamesCOService {
 
   getResultsByGamePlayed(): Observable<ResultsGamesPlayed[]> {
     return this.http.get<ResultsGamesPlayed[]>(`${environment.apiGames}GameResult/getResults/byGamePlayed`)
+      .pipe(catchError(this.handleError));
+  }
+
+  putGameResults(resultGames: ResultGames[]): Observable<ResultGames[]> {
+    return this.http.put<ResultGames[]>(`${environment.apiGames}GameResult`, resultGames)
       .pipe(catchError(this.handleError));
   }
 
