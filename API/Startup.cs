@@ -65,8 +65,8 @@ namespace API
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "API ...",
-                    Description = "API de Exemplo"
+                    Title = "URSALGamesCO",
+                    Description = "API of URSALGamesCO"
                 });
 
                 // Set the comments path for the Swagger JSON and UI.
