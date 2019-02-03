@@ -23,7 +23,7 @@ namespace Data.SQLite.Repositories
 
         public List<long> GetGamesList()
         {
-            return Context.GameResults.Select(gr => gr.GameId).Distinct().ToList();
+            return Context.GameResults.Select(gr => gr.GameId).Distinct().OrderBy(gr => gr).ToList();
         }
 
         public List<GameResult> GetGameResultList(int gameId)

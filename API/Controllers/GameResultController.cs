@@ -16,7 +16,7 @@ namespace API.Controllers
         public GameResultController(IGameResultService gameResultService) => this.GameResultService = gameResultService;
 
         [HttpPut]
-        public ActionResult<bool> Put([FromBody] List<GameResultDTO> results)
+        public ActionResult<bool> PutGameResults([FromBody] List<GameResultDTO> results)
         {
             try
             {
