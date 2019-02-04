@@ -7,6 +7,7 @@ A prototype of cross-platform Game app
 This package contains a solution for managing / displaying the scores of users who play on our gaming platform. This solution consists of a back-end (.NET Core) and a front-end (Angular6).
 
 Concepts used:
+
 DDD
 
 SOLID
