@@ -47,9 +47,9 @@ namespace API.Controllers
             {
                 return Ok(GameResultService.UpdateResults(results));
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Could not record player's score. Contact our support for more details.");
             }
         }
 
