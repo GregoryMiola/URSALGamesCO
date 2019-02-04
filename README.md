@@ -12,6 +12,7 @@ You can build it from source.
 Supported Compilers are:
 
 Visual Studio 2017 with .NET Core support
+
 Visual Studio Code
 
 You need to install Git and Node.js < 8.x. (node.js is optional).
