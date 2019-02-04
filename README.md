@@ -8,7 +8,9 @@ This package contains a solution for managing / displaying the scores of users w
 
 Concepts used:
 DDD
+
 SOLID
+
 Clean Code
 
 ## Installing/Running
